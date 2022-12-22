@@ -18,7 +18,7 @@ metadata:
     {{- toYaml . | nindent 4 }}
   {{- end }}
 spec:
-  ingressClassName: nginx
+  ingressClassName: {{ .Values.maps.ingress.class | default "nginx" }}
   {{- if .Values.front.ingress.tls }}
   tls:
     {{- range .Values.front.ingress.tls }}
