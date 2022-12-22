@@ -57,10 +57,10 @@ back:
     hosts:
       - host: api # FQDN is computed with this and domain
         paths: [/]
-    tls:
-      - secretName: back-tls      
-        hosts:
-          - api # FQDN is computed with this and domain
+    # tls:
+    #   - secretName: back-tls      
+    #     hosts:
+    #       - api # FQDN is computed with this and domain
 #################### workadventure-back ####################
 
 #################### workadventure-front ####################
@@ -104,10 +104,10 @@ front:
     hosts:
       - host: play
         paths: [/]
-    tls:
-      - secretName: front-tls
-        hosts:
-          - play
+    # tls:
+    #   - secretName: front-tls
+    #     hosts:
+    #       - play
   
 #################### workadventure-front ####################
 
@@ -148,10 +148,10 @@ pusher:
     hosts:
       - host: pusher
         paths: [/]
-    tls:
-      - secretName: pusher-tls
-        hosts:
-          - pusher  
+    # tls:
+    #   - secretName: pusher-tls
+    #     hosts:
+    #       - pusher  
 #################### workadventure-pusher ####################
 
 
@@ -191,10 +191,10 @@ uploader:
     hosts:
       - host: uploader
         paths: [/]
-    tls:
-      - secretName: uploader-tls
-        hosts:
-          - uploader
+    # tls:
+    #   - secretName: uploader-tls
+    #     hosts:
+    #       - uploader
 #################### workadventure-uploader ####################
 
 
@@ -234,10 +234,10 @@ maps:
     hosts:
       - host: maps
         paths: [/]
-    tls:
-      - secretName: maps-tls
-        hosts:
-          - maps 
+    # tls:
+    #   - secretName: maps-tls
+    #     hosts:
+    #       - maps 
 #################### workadventure-maps ####################
 
 serviceAccount:
